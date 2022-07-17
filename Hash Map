@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+/*
+1. Adding an element in hashmap -> map.put(key,value) -> arr.add(index, val)
+2. Get the value from hashmap -> map.get(key) -> arr.get(index)
+3. Remove from hashmap -> map.remove(key) -> arr.remove(index)
+4. check whether key is present or not -> map.containsKey(key) -> true, if present or false, if not present
+ */
+
+public class HashMapTutorial {
+    public static void main(String[] args) {
+        Map<String, Integer> directory = new HashMap<>();
+        directory.put("Nithin", 12345);
+        directory.put("Shivani", 98765);
+        directory.put("Avani", 23456);
+        directory.put("Shivani", 123456); // updation happen
+        directory.remove("Avani");
+
+        System.out.println("Shivani's phone number is " + directory.get("Shivani"));
+    }
+}
