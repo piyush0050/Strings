@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+/*
+1. Adding an element at last arr.add(ele)
+2. Adding an element at particular index is arr.add(index, ele)
+3. Value at particular index is arr.get(i)
+4. Size of arraylist is arr.size()
+5. remove the element from arraylist -> arr.remove(index)
+6. Searching the index value for a particular number -> arr.indexOf(val)
+7. Set/update a value at particular index -> arr.set(index, val)
+ */
+public class ArrayListTutorial {
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<>(); // The size is 0
+        // 5 6 3 8 4
+        arr.add(5); // at the last, add 5
+        arr.add(6); // at the last, add 6
+        arr.add(3); //
+        arr.add(8);
+        arr.add(4);
+
+        arr.add(2, 7);
+        /*System.out.println("value at index 4 is " + arr.get(4));
+        for(int i=0; i<arr.size(); i++) {
+            System.out.println("value is " + arr.get(i));
+        }*/
+        // 5 6 7 3 8 4
+        arr.remove(3); // 5 6 7 8 4
+        rint val = arr.indexOf(8); // expected : 3
+        System.out.println(val);
+        arr.set(4, 9);
+    }
+}
