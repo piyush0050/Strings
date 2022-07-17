@@ -1,0 +1,24 @@
+import java.util.HashSet;
+import java.util.Set;
+/*
+1. Addition of element in the set -> set.add(4)
+2. remove all the element from the set -> set.clear()
+3. remove particular element from set -> set.remove(val)
+4. size of set is -> set.size()
+5. You can convert set to an array -> set.toArray();
+ */
+
+public class SetTutorial {
+    public static void main(String[] args) {
+        Set<Integer> set = new HashSet<>();
+        set.add(4);
+        set.add(5);
+        set.add(6);
+        set.add(4);
+        set.add(7);
+        System.out.println("Size of set is " + set.size());
+        for(int val: set) {
+            System.out.println("Value is " + val);
+        }
+    }
+}
