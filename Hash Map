@@ -17,5 +17,9 @@ public class HashMapTutorial {
         directory.remove("Avani");
 
         System.out.println("Shivani's phone number is " + directory.get("Shivani"));
+        Set<String> myKeys = directory.keySet();
+        for(String key: myKeys) {
+            System.out.println("Key is " + key + " value is " + directory.get(key));
+            }
     }
 }
